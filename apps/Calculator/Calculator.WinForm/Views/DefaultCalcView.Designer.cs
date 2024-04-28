@@ -30,8 +30,8 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             BackButton = new Button();
-            textBox1 = new TextBox();
-            label2 = new Label();
+            DisplayValueTextBox = new TextBox();
+            CalculateProcessLabel = new Label();
             ClearButton = new Button();
             button2 = new Button();
             DivideButton = new Button();
@@ -65,8 +65,8 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.Controls.Add(BackButton, 1, 2);
-            tableLayoutPanel1.Controls.Add(textBox1, 0, 1);
-            tableLayoutPanel1.Controls.Add(label2, 0, 0);
+            tableLayoutPanel1.Controls.Add(DisplayValueTextBox, 0, 1);
+            tableLayoutPanel1.Controls.Add(CalculateProcessLabel, 0, 0);
             tableLayoutPanel1.Controls.Add(ClearButton, 0, 2);
             tableLayoutPanel1.Controls.Add(button2, 2, 2);
             tableLayoutPanel1.Controls.Add(DivideButton, 3, 2);
@@ -113,30 +113,30 @@
             BackButton.Text = "←";
             BackButton.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // DisplayValueTextBox
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.SetColumnSpan(textBox1, 4);
-            textBox1.Enabled = false;
-            textBox1.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(8, 76);
-            textBox1.Margin = new Padding(8);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(304, 35);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "0.12345";
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            DisplayValueTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(DisplayValueTextBox, 4);
+            DisplayValueTextBox.Enabled = false;
+            DisplayValueTextBox.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            DisplayValueTextBox.Location = new Point(8, 76);
+            DisplayValueTextBox.Margin = new Padding(8);
+            DisplayValueTextBox.Name = "DisplayValueTextBox";
+            DisplayValueTextBox.Size = new Size(304, 35);
+            DisplayValueTextBox.TabIndex = 0;
+            DisplayValueTextBox.Text = "0.12345";
+            DisplayValueTextBox.TextAlign = HorizontalAlignment.Right;
             // 
-            // label2
+            // CalculateProcessLabel
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label2.AutoSize = true;
-            tableLayoutPanel1.SetColumnSpan(label2, 4);
-            label2.Location = new Point(160, 51);
-            label2.Name = "label2";
-            label2.Size = new Size(157, 17);
-            label2.TabIndex = 1;
-            label2.Text = "12345689 + 123456789 =";
+            CalculateProcessLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            CalculateProcessLabel.AutoSize = true;
+            tableLayoutPanel1.SetColumnSpan(CalculateProcessLabel, 4);
+            CalculateProcessLabel.Location = new Point(160, 51);
+            CalculateProcessLabel.Name = "CalculateProcessLabel";
+            CalculateProcessLabel.Size = new Size(157, 17);
+            CalculateProcessLabel.TabIndex = 1;
+            CalculateProcessLabel.Text = "12345689 + 123456789 =";
             // 
             // ClearButton
             // 
@@ -428,8 +428,8 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Button button1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private TextBox textBox1;
-        private Label label2;
+        private TextBox DisplayValueTextBox;
+        private Label CalculateProcessLabel;
         private Button BackButton;
         private Button ClearButton;
         private Button button2;
