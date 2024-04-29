@@ -45,6 +45,8 @@ namespace Calculator.WinForm
                     info = info + methodBase?.Name ?? string.Empty;
                     info = $"👉 {info}";
 
+
+                    // TODO: デバッグ出力 or ログファイル出力の処理を統括した関数をDomainに準備する方が良い
 #if DEBUG
                     Debug.WriteLine(info);
 #else
