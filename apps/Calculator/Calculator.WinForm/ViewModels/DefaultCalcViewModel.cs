@@ -251,11 +251,43 @@ namespace Calculator.WinForm.ViewModels
         }
 
         /// <summary>
+        /// 戻るボタンを押した時の処理
+        /// </summary>
+        public void BackButtonExecute()
+        {
+            if (_currentResultEntity.PrevEntity is null)
+            {
+                Debug.WriteLine("前回の操作がありません！");
+                return;
+            }
+            _currentResultEntity = _currentResultEntity.PrevEntity;
+            CalculateProcess = _currentResultEntity.Process;
+            DisplayValue = _currentResultEntity.DisplayValue;
+        }
+
+        /// <summary>
+        /// 進むボタンを押した時の処理
+        /// </summary>
+        public void NextButtonExecute()
+        {
+            if (_currentResultEntity.NextEntity is null)
+            {
+                Debug.WriteLine("次の操作がありません！");
+                return;
+            }
+            _currentResultEntity = _currentResultEntity.NextEntity;
+            CalculateProcess = _currentResultEntity.Process;
+            DisplayValue = _currentResultEntity.DisplayValue;
+        }
+
+        /// <summary>
         /// ボタン押下時の汎用処理
         /// </summary>
         /// <param name="resultEntity">最新の計算結果エンティティ。呼び出し元で処理を実装すること。</param>
         private void ButtonExecute(Action<CalculationResultEntity> resultEntity)
         {
+            // TODO: 無限にリストを繋いでいく処理になっているため、処理を記録する上限機能を設ける。
+
             var newEntity = new CalculationResultEntity(_currentResultEntity);
             newEntity.PrevEntity = _currentResultEntity;
             _currentResultEntity.NextEntity = newEntity;

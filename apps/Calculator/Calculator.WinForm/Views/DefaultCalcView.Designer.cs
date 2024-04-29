@@ -33,7 +33,7 @@
             DisplayValueTextBox = new TextBox();
             CalculateProcessLabel = new Label();
             ClearButton = new Button();
-            button2 = new Button();
+            NextButton = new Button();
             DivideButton = new Button();
             SevenButton = new Button();
             EightButton = new Button();
@@ -68,7 +68,7 @@
             tableLayoutPanel1.Controls.Add(DisplayValueTextBox, 0, 1);
             tableLayoutPanel1.Controls.Add(CalculateProcessLabel, 0, 0);
             tableLayoutPanel1.Controls.Add(ClearButton, 0, 2);
-            tableLayoutPanel1.Controls.Add(button2, 2, 2);
+            tableLayoutPanel1.Controls.Add(NextButton, 2, 2);
             tableLayoutPanel1.Controls.Add(DivideButton, 3, 2);
             tableLayoutPanel1.Controls.Add(SevenButton, 0, 3);
             tableLayoutPanel1.Controls.Add(EightButton, 1, 3);
@@ -112,6 +112,7 @@
             BackButton.TabIndex = 3;
             BackButton.Text = "←";
             BackButton.UseVisualStyleBackColor = false;
+            BackButton.Click += BackButton_Click;
             // 
             // DisplayValueTextBox
             // 
@@ -153,18 +154,19 @@
             ClearButton.UseVisualStyleBackColor = false;
             ClearButton.Click += ClearButton_Click;
             // 
-            // button2
+            // NextButton
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button2.BackColor = Color.FromArgb(0, 192, 192);
-            button2.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(163, 139);
-            button2.Name = "button2";
-            button2.Size = new Size(74, 60);
-            button2.TabIndex = 3;
-            button2.Text = "→";
-            button2.UseVisualStyleBackColor = false;
+            NextButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            NextButton.BackColor = Color.FromArgb(0, 192, 192);
+            NextButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            NextButton.ForeColor = Color.White;
+            NextButton.Location = new Point(163, 139);
+            NextButton.Name = "NextButton";
+            NextButton.Size = new Size(74, 60);
+            NextButton.TabIndex = 3;
+            NextButton.Text = "→";
+            NextButton.UseVisualStyleBackColor = false;
+            NextButton.Click += NextButton_Click;
             // 
             // DivideButton
             // 
@@ -451,7 +453,7 @@
         private Label CalculateProcessLabel;
         private Button BackButton;
         private Button ClearButton;
-        private Button button2;
+        private Button NextButton;
         private Button DivideButton;
         private Button SevenButton;
         private Button EightButton;
