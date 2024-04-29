@@ -10,8 +10,10 @@ namespace CalculatorTest.Tests.ViewModelTests
         {
             var vm = new DefaultCalcViewModel();
 
+            var temp = vm.DisplayValue;
+
             Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
+            Assert.AreEqual("0", vm.DisplayValue);
 
             // 0
             vm.ZeroButtonExecute();
@@ -68,9 +70,6 @@ namespace CalculatorTest.Tests.ViewModelTests
         public void 小数点処理()
         {
             var vm = new DefaultCalcViewModel();
-
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
 
             // 1
             vm.OneButtonExecute();
@@ -138,9 +137,6 @@ namespace CalculatorTest.Tests.ViewModelTests
         {
             var vm = new DefaultCalcViewModel();
 
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
-
             // 1
             vm.OneButtonExecute();
             Assert.AreEqual("1", vm.CalculateProcess);
@@ -168,9 +164,6 @@ namespace CalculatorTest.Tests.ViewModelTests
         {
             var vm = new DefaultCalcViewModel();
 
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
-
             // 1
             vm.OneButtonExecute();
             Assert.AreEqual("1", vm.CalculateProcess);
@@ -197,9 +190,6 @@ namespace CalculatorTest.Tests.ViewModelTests
         {
             var vm = new DefaultCalcViewModel();
 
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
-
             // 1
             vm.OneButtonExecute();
             Assert.AreEqual("1", vm.CalculateProcess);
@@ -225,9 +215,6 @@ namespace CalculatorTest.Tests.ViewModelTests
         public void 符号を変更()
         {
             var vm = new DefaultCalcViewModel();
-
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
 
             // 1
             vm.OneButtonExecute();
@@ -264,9 +251,6 @@ namespace CalculatorTest.Tests.ViewModelTests
         public void クリア()
         {
             var vm = new DefaultCalcViewModel();
-
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
 
             // 1
             vm.OneButtonExecute();

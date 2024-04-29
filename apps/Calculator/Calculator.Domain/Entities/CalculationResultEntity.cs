@@ -21,7 +21,16 @@ namespace Calculator.Domain.Entities
         }
 
         /// <summary>
-        /// コンストラクタ
+        /// コンストラクタ。Value1に初期値を設定する。
+        /// </summary>
+        /// <param name="value1"></param>
+        public CalculationResultEntity(string value1)
+        {
+            Value1 = new CalculationValue(value1);
+        }
+
+        /// <summary>
+        /// コンストラクタ。前回の計算結果エンティティを設定する。
         /// </summary>
         /// <param name="prev">前回の計算結果エンティティ</param>
         public CalculationResultEntity(CalculationResultEntity prev)

@@ -20,7 +20,8 @@ namespace Calculator.WinForm.ViewModels
         public DefaultCalcViewModel()
         {
             //Debug.WriteLine("---- DefaultCalcViewModel Created! ----");
-            _currentResultEntity = new CalculationResultEntity();
+            _currentResultEntity = new CalculationResultEntity("0");
+            DisplayValue = _currentResultEntity.DisplayValue;
         }
 
         private string _calculateProcess = string.Empty;
