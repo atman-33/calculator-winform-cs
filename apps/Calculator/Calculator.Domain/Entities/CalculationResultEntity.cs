@@ -356,6 +356,7 @@ namespace Calculator.Domain.Entities
                 var newValue = _service.Calculate(Value1, Value2, Operator);
                 Value1 = new CalculationValue(newValue.ToString());
                 Value2 = null;
+                HasEqual = false;
             }
         }
     }
