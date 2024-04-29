@@ -288,5 +288,51 @@ namespace CalculatorTest.Tests.ViewModelTests
             Assert.AreEqual("12", vm.CalculateProcess);
             Assert.AreEqual("12", vm.DisplayValue);
         }
+
+        [TestMethod]
+        public void 小数点制限()
+        {
+            var vm = new DefaultCalcViewModel();
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1", vm.CalculateProcess);
+            Assert.AreEqual("1", vm.DisplayValue);
+
+            // .
+            vm.PointButtonExecute();
+            Assert.AreEqual("1", vm.CalculateProcess);
+            Assert.AreEqual("1.", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1.1", vm.CalculateProcess);
+            Assert.AreEqual("1.1", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1.11", vm.CalculateProcess);
+            Assert.AreEqual("1.11", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1.111", vm.CalculateProcess);
+            Assert.AreEqual("1.111", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1.1111", vm.CalculateProcess);
+            Assert.AreEqual("1.1111", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1.11111", vm.CalculateProcess);
+            Assert.AreEqual("1.11111", vm.DisplayValue);
+
+            // 1 (小数点5桁上限のため追加されない)
+            vm.OneButtonExecute();
+            Assert.AreEqual("1.11111", vm.CalculateProcess);
+            Assert.AreEqual("1.11111", vm.DisplayValue);
+        }
     }
 }

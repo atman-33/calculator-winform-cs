@@ -50,6 +50,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void ZeroButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(0);
@@ -61,6 +67,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void OneButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(1);
@@ -72,6 +84,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void TwoButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(2);
@@ -83,6 +101,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void ThreeButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(3);
@@ -94,6 +118,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void FourButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(4);
@@ -105,6 +135,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void FiveButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(5);
@@ -116,6 +152,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void SixButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(6);
@@ -127,6 +169,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void SevenButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(7);
@@ -138,6 +186,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void EightButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(8);
@@ -149,6 +203,12 @@ namespace Calculator.WinForm.ViewModels
         /// </summary>
         public void NineButtonExecute()
         {
+            if (!_currentResultEntity.CanAddNumber())
+            {
+                Debug.WriteLine("小数点桁数上限を超過しました。");
+                return;
+            }
+
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(9);

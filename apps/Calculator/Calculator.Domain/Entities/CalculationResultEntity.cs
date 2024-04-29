@@ -1,4 +1,5 @@
-﻿using Calculator.Domain.Services;
+﻿using Calculator.Domain.Modules.Helpers;
+using Calculator.Domain.Services;
 using Calculator.Domain.ValueObjects;
 
 namespace Calculator.Domain.Entities
@@ -8,6 +9,11 @@ namespace Calculator.Domain.Entities
     /// </summary>
     public class CalculationResultEntity
     {
+        /// <summary>
+        /// 利用可能な最大小数点桁数
+        /// </summary>
+        const int MaxDicimalPlaces = 5;
+
         /// <summary>
         /// 計算サービス
         /// </summary>
@@ -188,6 +194,30 @@ namespace Calculator.Domain.Entities
                 {
                     return Value2 is null ? true : !Value2.Value.Contains(".");
                 }
+            }
+        }
+
+        /// <summary>
+        /// 数字を追加できる時はtrue
+        /// </summary>
+        /// <returns></returns>
+        public bool CanAddNumber()
+        {
+            if (Operator is null)
+            {
+                if (Value1 is null)
+                {
+                    return true;
+                }
+                return DecimalHelper.GetDecimalPlaces(Value1.Value) < MaxDicimalPlaces;
+            }
+            else
+            {
+                if (Value2 is null)
+                {
+                    return true;
+                }
+                return DecimalHelper.GetDecimalPlaces(Value2.Value) < MaxDicimalPlaces;
             }
         }
 
