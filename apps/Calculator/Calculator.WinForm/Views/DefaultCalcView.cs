@@ -234,6 +234,22 @@ namespace Calculator.WinForm
         }
 
         /// <summary>
+        /// ×ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MultiplyButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.MultiplyExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
+
+        /// <summary>
         /// =ボタンをクリックした時の処理
         /// </summary>
         /// <param name="sender"></param>

@@ -237,6 +237,16 @@ namespace Calculator.Domain.Entities
         }
 
         /// <summary>
+        /// ×ボタンをセットする。
+        /// </summary>
+        public void SetMultiply()
+        {
+            CalculateAndSetValue1();
+            Operator = new OperatorValue(OperatorValue.Multiply.Value);
+            NormalizeValues();
+        }
+
+        /// <summary>
         /// =ボタンをセットする。
         /// </summary>
         public void SetEqual()

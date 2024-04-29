@@ -232,6 +232,7 @@
             MultiplyButton.TabIndex = 2;
             MultiplyButton.Text = "×";
             MultiplyButton.UseVisualStyleBackColor = false;
+            MultiplyButton.Click += MultiplyButton_Click;
             // 
             // FourButton
             // 

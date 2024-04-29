@@ -162,5 +162,34 @@ namespace CalculatorTest.Tests.ViewModelTests
             Assert.AreEqual("3", vm.DisplayValue);
 
         }
+
+        [TestMethod]
+        public void 掛け算()
+        {
+            var vm = new DefaultCalcViewModel();
+
+            Assert.AreEqual("", vm.CalculateProcess);
+            Assert.AreEqual("", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1", vm.CalculateProcess);
+            Assert.AreEqual("1", vm.DisplayValue);
+
+            // ×
+            vm.MultiplyExecute();
+            Assert.AreEqual("1 ×", vm.CalculateProcess);
+            Assert.AreEqual("1", vm.DisplayValue);
+
+            // 2
+            vm.TwoButtonExecute();
+            Assert.AreEqual("1 ×", vm.CalculateProcess);
+            Assert.AreEqual("2", vm.DisplayValue);
+
+            // =
+            vm.EqualButtonExecute();
+            Assert.AreEqual("1 × 2 =", vm.CalculateProcess);
+            Assert.AreEqual("2", vm.DisplayValue);
+        }
     }
 }

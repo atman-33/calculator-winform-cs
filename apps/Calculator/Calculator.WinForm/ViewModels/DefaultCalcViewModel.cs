@@ -193,6 +193,17 @@ namespace Calculator.WinForm.ViewModels
         }
 
         /// <summary>
+        /// ×ボタンを押した時の処理
+        /// </summary>
+        public void MultiplyExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetMultiply();
+            });
+        }
+
+        /// <summary>
         /// =ボタンを押した時の処理
         /// </summary>
         public void EqualButtonExecute()
