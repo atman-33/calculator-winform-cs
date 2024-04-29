@@ -190,6 +190,7 @@
             SevenButton.TabIndex = 2;
             SevenButton.Text = "7";
             SevenButton.UseVisualStyleBackColor = false;
+            SevenButton.Click += SevenButton_Click;
             // 
             // EightButton
             // 
@@ -203,6 +204,7 @@
             EightButton.TabIndex = 2;
             EightButton.Text = "8";
             EightButton.UseVisualStyleBackColor = false;
+            EightButton.Click += EightButton_Click;
             // 
             // NineButton
             // 
@@ -216,6 +218,7 @@
             NineButton.TabIndex = 2;
             NineButton.Text = "9";
             NineButton.UseVisualStyleBackColor = false;
+            NineButton.Click += NineButton_Click;
             // 
             // MultiplyButton
             // 
@@ -242,6 +245,7 @@
             FourButton.TabIndex = 2;
             FourButton.Text = "4";
             FourButton.UseVisualStyleBackColor = false;
+            FourButton.Click += FourButton_Click;
             // 
             // FiveButton
             // 
@@ -255,6 +259,7 @@
             FiveButton.TabIndex = 2;
             FiveButton.Text = "5";
             FiveButton.UseVisualStyleBackColor = false;
+            FiveButton.Click += FiveButton_Click;
             // 
             // SixButton
             // 
@@ -268,6 +273,7 @@
             SixButton.TabIndex = 2;
             SixButton.Text = "6";
             SixButton.UseVisualStyleBackColor = false;
+            SixButton.Click += SixButton_Click;
             // 
             // SubtractButton
             // 
@@ -307,6 +313,7 @@
             ThreeButton.TabIndex = 2;
             ThreeButton.Text = "3";
             ThreeButton.UseVisualStyleBackColor = false;
+            ThreeButton.Click += ThreeButton_Click;
             // 
             // TwoButton
             // 
@@ -320,6 +327,7 @@
             TwoButton.TabIndex = 2;
             TwoButton.Text = "2";
             TwoButton.UseVisualStyleBackColor = false;
+            TwoButton.Click += TwoButton_Click;
             // 
             // OneButton
             // 

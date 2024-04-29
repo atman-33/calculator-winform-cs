@@ -65,6 +65,94 @@ namespace Calculator.WinForm.ViewModels
         }
 
         /// <summary>
+        /// 2ボタンを押した時の処理
+        /// </summary>
+        public void TwoButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(2);
+            });
+        }
+
+        /// <summary>
+        /// 3ボタンを押した時の処理
+        /// </summary>
+        public void ThreeButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(3);
+            });
+        }
+
+        /// <summary>
+        /// 4ボタンを押した時の処理
+        /// </summary>
+        public void FourButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(4);
+            });
+        }
+
+        /// <summary>
+        /// 5ボタンを押した時の処理
+        /// </summary>
+        public void FiveButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(5);
+            });
+        }
+
+        /// <summary>
+        /// 6ボタンを押した時の処理
+        /// </summary>
+        public void SixButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(6);
+            });
+        }
+
+        /// <summary>
+        /// 7ボタンを押した時の処理
+        /// </summary>
+        public void SevenButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(7);
+            });
+        }
+
+        /// <summary>
+        /// 8ボタンを押した時の処理
+        /// </summary>
+        public void EightButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(8);
+            });
+        }
+
+        /// <summary>
+        /// 9ボタンを押した時の処理
+        /// </summary>
+        public void NineButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(9);
+            });
+        }
+
+        /// <summary>
         /// ボタン押下時の汎用処理
         /// </summary>
         /// <param name="resultEntity">最新の計算結果エンティティ。呼び出し元で処理を実装すること。</param>
