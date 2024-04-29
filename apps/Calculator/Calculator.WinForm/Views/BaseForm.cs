@@ -50,7 +50,7 @@ namespace Calculator.WinForm
 #if DEBUG
                     Debug.WriteLine(info);
 #else
-                    _logger.Info($"👉 {info}");
+                    _logger.Info($"{info}");
 #endif
                 }
 
@@ -103,9 +103,8 @@ namespace Calculator.WinForm
         {
 #if DEBUG
             Debug.WriteLine("🚀 open:" + this.Name);
-            _logger.Info("🚀 open:" + this.Name);
-
 #else
+            Debug.WriteLine("🚀 open:" + this.Name);            
             _logger.Info("🚀 open:" + this.Name);
 #endif
         }
@@ -120,8 +119,8 @@ namespace Calculator.WinForm
 #if DEBUG
             Debug.WriteLine("🌙 close:" + this.Name);
 #else
+            Debug.WriteLine("🚀 open:" + this.Name);            
             _logger.Info("🌙 close:" + this.Name);
-
 #endif
         }
     }
