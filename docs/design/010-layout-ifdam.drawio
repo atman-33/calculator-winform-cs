@@ -1,0 +1,251 @@
+<mxfile host="65bd71144e">
+    <diagram id="Mt2VS-fp84buWHTQqZdh" name="ページ1">
+        <mxGraphModel dx="1993" dy="1133" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="1: 標準電卓画面（DefaultCalcView）" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="C" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="203" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="←" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="125" y="203" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="→" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="203" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="÷" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="203" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="7" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="253" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="8" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="125" y="253" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="9" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="253" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="×" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="253" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="4" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="303" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="5" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="125" y="303" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="6" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="303" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="-" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="303" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="353" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="2" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="125" y="353" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="3" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="353" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="+" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="353" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="+/-" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="403" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="0" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="125" y="403" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="." style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="403" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="=" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="403" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="strokeWidth=1;shadow=0;dashed=0;align=right;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#666666;mainText=;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="163" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="0.123" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="163" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Calculator" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="103" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="dashed=0;shape=mxgraph.gmdl.preferences;strokeColor=none;fillColor=#FFFFFF;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="78" y="110" width="24" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="0.12 + 0.003 =" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="115" y="133" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#000000;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="90" width="220" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;ul&gt;&lt;li&gt;少数点は5桁まで操作可能&lt;/li&gt;&lt;li&gt;操作の「進む」、「戻る」機能あり&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=top;overflow=hidden;fontSize=14;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="98" width="320" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=default;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="59" target="68" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="アプリ起動" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="75" y="622.5" width="115" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="79" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="842.0999999999999" y="700.1625000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="80" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="89" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="99" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="101" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="1: 標準電卓画面&lt;br&gt;&lt;br&gt;表示&lt;br&gt;・計算過程&lt;br&gt;・計算結果&lt;br&gt;&lt;br&gt;&lt;br&gt;入力&lt;br&gt;（無し）&lt;br&gt;&lt;br&gt;操作&lt;br&gt;・ハンバーガーメニューボタン&lt;br&gt;・数字ボタン（0～9）&lt;br&gt;・プラスマイナスボタン（+/-）&lt;br&gt;・小数点ボタン&lt;br&gt;・演算ボタン（+,-,×,÷）&lt;br&gt;・イコールボタン（=）&lt;br&gt;・クリアボタン（C）&lt;br&gt;・戻るボタン（←）&lt;br&gt;・進むボタン（→）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=0;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="610" width="230" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=14;fontColor=default;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="68" target="66" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="初期処理として、表示の値を0に設定する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="252" y="620" width="155" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="79" target="75" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="969.5999999999999" y="596.5625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="(*1)&lt;br&gt;&lt;br&gt;[=をクリック直後]&lt;br&gt;・新規の数値として登録&lt;br&gt;&lt;br&gt;[=をクリック直後ではない]&lt;br&gt;・入力中の数値の末尾に数字を追加" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;perimeterSpacing=0;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="540" width="260" height="151.25" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="(*1)数字を反映する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="582.5" width="170" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「数字」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="575" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="80" target="82" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="&lt;span style=&quot;&quot;&gt;「プラスマイナス」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;labelPosition=center;align=center;fillColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="827" y="691.25" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="入力中の数値のプラスマイナスの符号を逆にする。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="693.75" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「小数点」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="837" y="811.25" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="(*2)入力中の数値の末尾に小数点を追加する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="821.25" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="(*2)&lt;br&gt;&lt;br&gt;・既に入力中の数値が小数点数値の場合は、何もしない。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="801.25" width="260" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="84" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="720" y="707.5" as="sourcePoint"/>
+                        <mxPoint x="837" y="795" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;exitPerimeter=0;" parent="1" source="84" target="85" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1063" y="881.25" as="sourcePoint"/>
+                        <mxPoint x="1190" y="1088.7500000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="89" target="90" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「演算」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="837" y="931.25" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="(*3)演算記号を反映する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="936.25" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="(*3)&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が未設定]&lt;br&gt;・演算記号を設定&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が設定済み]&lt;br&gt;・計算を実行" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="936.25" width="260" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="94" target="95" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「イコール」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="837" y="1105.25" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="(*4)計算処理を実行する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="1110.25" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="(*4)&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が未設定]&lt;br&gt;・1つ目の数値だけで計算&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が設定済み]&lt;br&gt;・1つ目と2つ目の数値を使って計算" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="1110.25" width="260" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="99" target="100" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「クリア」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="837" y="1285" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="計算過程や計算用の数値、結果を全てクリアする。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="1290" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="101" target="103" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「戻る」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="837" y="1400" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="102" target="104" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「進」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="837" y="1510" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="1つ前の操作状態に戻る。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="1405" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="1つ後の操作状態に進む。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="1515" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「ハンバーガーメニュー」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="430" width="243" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="111" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="560" as="targetPoint"/>
+                        <mxPoint x="710" y="652.5" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="電卓選択画面ダイアログを開く。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="432.5" width="180" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="111" target="113" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1073" y="620" as="sourcePoint"/>
+                        <mxPoint x="1150" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#CC0000;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="405" width="560" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="今回は未実装" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC0000;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="370" width="100" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
