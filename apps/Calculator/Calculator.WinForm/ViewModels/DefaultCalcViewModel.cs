@@ -1,4 +1,5 @@
-﻿using WinFormBoilerplate.WinForm.ViewModels;
+﻿using Calculator.Domain.Entities;
+using WinFormBoilerplate.WinForm.ViewModels;
 
 namespace Calculator.WinForm.ViewModels
 {
@@ -8,11 +9,17 @@ namespace Calculator.WinForm.ViewModels
     public class DefaultCalcViewModel : ViewModelBase
     {
         /// <summary>
+        /// 現在の計算結果エンティティ（表示中の計算結果）
+        /// </summary>
+        private CalculationResultEntity _currentResultEntity;
+
+        /// <summary>
         /// コンストラクタ
         /// </summary>
         public DefaultCalcViewModel()
         {
             //Debug.WriteLine("---- DefaultCalcViewModel Created! ----");
+            _currentResultEntity = new CalculationResultEntity();
         }
 
         private string _calculateProcess = string.Empty;
@@ -33,6 +40,45 @@ namespace Calculator.WinForm.ViewModels
         {
             get { return _displayValue; }
             set { SetProperty(ref _displayValue, value); }
+        }
+
+        /// <summary>
+        /// 0ボタンを押した時の処理
+        /// </summary>
+        public void ZeroButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(0);
+            });
+        }
+
+        /// <summary>
+        /// 1ボタンを押した時の処理
+        /// </summary>
+        public void OneButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetNumber(1);
+            });
+        }
+
+        /// <summary>
+        /// ボタン押下時の汎用処理
+        /// </summary>
+        /// <param name="resultEntity">最新の計算結果エンティティ。呼び出し元で処理を実装すること。</param>
+        private void ButtonExecute(Action<CalculationResultEntity> resultEntity)
+        {
+            var newEntity = new CalculationResultEntity(_currentResultEntity);
+            newEntity.PrevEntity = _currentResultEntity;
+            _currentResultEntity.NextEntity = newEntity;
+
+            _currentResultEntity = newEntity;
+            resultEntity(newEntity);
+
+            CalculateProcess = _currentResultEntity.Process;
+            DisplayValue = _currentResultEntity.DisplayValue;
         }
     }
 }

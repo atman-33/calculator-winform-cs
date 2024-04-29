@@ -12,6 +12,14 @@ namespace CalculatorTest.Tests.ViewModelTests
 
             Assert.AreEqual("", vm.CalculateProcess);
             Assert.AreEqual("", vm.DisplayValue);
+
+            vm.ZeroButtonExecute();
+            Assert.AreEqual("0", vm.CalculateProcess);
+            Assert.AreEqual("0", vm.DisplayValue);
+
+            vm.OneButtonExecute();
+            Assert.AreEqual("1", vm.CalculateProcess);
+            Assert.AreEqual("1", vm.DisplayValue);
         }
     }
 }

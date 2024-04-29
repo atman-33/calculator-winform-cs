@@ -24,5 +24,37 @@ namespace Calculator.WinForm
             DisplayValueTextBox.DataBindings.Add(
                 nameof(DisplayValueTextBox.Text), _viewModel, nameof(_viewModel.DisplayValue));
         }
+
+        /// <summary>
+        /// 0ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ZeroButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.ZeroButtonExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
+
+        /// <summary>
+        /// 1ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OneButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.OneButtonExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
     }
 }

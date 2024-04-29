@@ -132,7 +132,8 @@
             CalculateProcessLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             CalculateProcessLabel.AutoSize = true;
             tableLayoutPanel1.SetColumnSpan(CalculateProcessLabel, 4);
-            CalculateProcessLabel.Location = new Point(160, 51);
+            CalculateProcessLabel.Location = new Point(155, 51);
+            CalculateProcessLabel.Margin = new Padding(3, 0, 8, 0);
             CalculateProcessLabel.Name = "CalculateProcessLabel";
             CalculateProcessLabel.Size = new Size(157, 17);
             CalculateProcessLabel.TabIndex = 1;
@@ -332,6 +333,7 @@
             OneButton.TabIndex = 2;
             OneButton.Text = "1";
             OneButton.UseVisualStyleBackColor = false;
+            OneButton.Click += OneButton_Click;
             // 
             // PlusMinusButton
             // 
