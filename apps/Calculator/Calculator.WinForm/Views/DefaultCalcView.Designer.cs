@@ -38,12 +38,12 @@
             SevenButton = new Button();
             EightButton = new Button();
             NineButton = new Button();
-            MultipleButton = new Button();
+            MultiplyButton = new Button();
             FourButton = new Button();
             FiveButton = new Button();
             SixButton = new Button();
-            MinusButton = new Button();
-            PlusButton = new Button();
+            SubtractButton = new Button();
+            AddButton = new Button();
             ThreeButton = new Button();
             TwoButton = new Button();
             OneButton = new Button();
@@ -73,12 +73,12 @@
             tableLayoutPanel1.Controls.Add(SevenButton, 0, 3);
             tableLayoutPanel1.Controls.Add(EightButton, 1, 3);
             tableLayoutPanel1.Controls.Add(NineButton, 2, 3);
-            tableLayoutPanel1.Controls.Add(MultipleButton, 3, 3);
+            tableLayoutPanel1.Controls.Add(MultiplyButton, 3, 3);
             tableLayoutPanel1.Controls.Add(FourButton, 0, 4);
             tableLayoutPanel1.Controls.Add(FiveButton, 1, 4);
             tableLayoutPanel1.Controls.Add(SixButton, 2, 4);
-            tableLayoutPanel1.Controls.Add(MinusButton, 3, 4);
-            tableLayoutPanel1.Controls.Add(PlusButton, 3, 5);
+            tableLayoutPanel1.Controls.Add(SubtractButton, 3, 4);
+            tableLayoutPanel1.Controls.Add(AddButton, 3, 5);
             tableLayoutPanel1.Controls.Add(ThreeButton, 2, 5);
             tableLayoutPanel1.Controls.Add(TwoButton, 1, 5);
             tableLayoutPanel1.Controls.Add(OneButton, 0, 5);
@@ -216,18 +216,18 @@
             NineButton.Text = "9";
             NineButton.UseVisualStyleBackColor = false;
             // 
-            // MultipleButton
+            // MultiplyButton
             // 
-            MultipleButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            MultipleButton.BackColor = Color.FromArgb(0, 192, 192);
-            MultipleButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            MultipleButton.ForeColor = Color.White;
-            MultipleButton.Location = new Point(243, 205);
-            MultipleButton.Name = "MultipleButton";
-            MultipleButton.Size = new Size(74, 62);
-            MultipleButton.TabIndex = 2;
-            MultipleButton.Text = "×";
-            MultipleButton.UseVisualStyleBackColor = false;
+            MultiplyButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            MultiplyButton.BackColor = Color.FromArgb(0, 192, 192);
+            MultiplyButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            MultiplyButton.ForeColor = Color.White;
+            MultiplyButton.Location = new Point(243, 205);
+            MultiplyButton.Name = "MultiplyButton";
+            MultiplyButton.Size = new Size(74, 62);
+            MultiplyButton.TabIndex = 2;
+            MultiplyButton.Text = "×";
+            MultiplyButton.UseVisualStyleBackColor = false;
             // 
             // FourButton
             // 
@@ -268,31 +268,31 @@
             SixButton.Text = "6";
             SixButton.UseVisualStyleBackColor = false;
             // 
-            // MinusButton
+            // SubtractButton
             // 
-            MinusButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            MinusButton.BackColor = Color.FromArgb(0, 192, 192);
-            MinusButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            MinusButton.ForeColor = Color.White;
-            MinusButton.Location = new Point(243, 273);
-            MinusButton.Name = "MinusButton";
-            MinusButton.Size = new Size(74, 62);
-            MinusButton.TabIndex = 2;
-            MinusButton.Text = "-";
-            MinusButton.UseVisualStyleBackColor = false;
+            SubtractButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            SubtractButton.BackColor = Color.FromArgb(0, 192, 192);
+            SubtractButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            SubtractButton.ForeColor = Color.White;
+            SubtractButton.Location = new Point(243, 273);
+            SubtractButton.Name = "SubtractButton";
+            SubtractButton.Size = new Size(74, 62);
+            SubtractButton.TabIndex = 2;
+            SubtractButton.Text = "-";
+            SubtractButton.UseVisualStyleBackColor = false;
             // 
-            // PlusButton
+            // AddButton
             // 
-            PlusButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            PlusButton.BackColor = Color.FromArgb(0, 192, 192);
-            PlusButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            PlusButton.ForeColor = Color.White;
-            PlusButton.Location = new Point(243, 341);
-            PlusButton.Name = "PlusButton";
-            PlusButton.Size = new Size(74, 62);
-            PlusButton.TabIndex = 2;
-            PlusButton.Text = "+";
-            PlusButton.UseVisualStyleBackColor = false;
+            AddButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            AddButton.BackColor = Color.FromArgb(0, 192, 192);
+            AddButton.Font = new Font("Yu Gothic UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            AddButton.ForeColor = Color.White;
+            AddButton.Location = new Point(243, 341);
+            AddButton.Name = "AddButton";
+            AddButton.Size = new Size(74, 62);
+            AddButton.TabIndex = 2;
+            AddButton.Text = "+";
+            AddButton.UseVisualStyleBackColor = false;
             // 
             // ThreeButton
             // 
@@ -358,6 +358,7 @@
             ZeroButton.TabIndex = 2;
             ZeroButton.Text = "0";
             ZeroButton.UseVisualStyleBackColor = false;
+            ZeroButton.Click += ZeroButton_Click;
             // 
             // PointButton
             // 
@@ -437,12 +438,12 @@
         private Button SevenButton;
         private Button EightButton;
         private Button NineButton;
-        private Button MultipleButton;
+        private Button MultiplyButton;
         private Button FourButton;
         private Button FiveButton;
         private Button SixButton;
-        private Button MinusButton;
-        private Button PlusButton;
+        private Button SubtractButton;
+        private Button AddButton;
         private Button ThreeButton;
         private Button TwoButton;
         private Button OneButton;
