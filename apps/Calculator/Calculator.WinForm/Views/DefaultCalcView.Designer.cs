@@ -287,6 +287,7 @@
             SubtractButton.TabIndex = 2;
             SubtractButton.Text = "-";
             SubtractButton.UseVisualStyleBackColor = false;
+            SubtractButton.Click += SubtractButton_Click;
             // 
             // AddButton
             // 
@@ -300,6 +301,7 @@
             AddButton.TabIndex = 2;
             AddButton.Text = "+";
             AddButton.UseVisualStyleBackColor = false;
+            AddButton.Click += AddButton_Click;
             // 
             // ThreeButton
             // 
@@ -396,6 +398,7 @@
             EqualButton.TabIndex = 2;
             EqualButton.Text = "=";
             EqualButton.UseVisualStyleBackColor = false;
+            EqualButton.Click += EqualButton_Click;
             // 
             // button1
             // 

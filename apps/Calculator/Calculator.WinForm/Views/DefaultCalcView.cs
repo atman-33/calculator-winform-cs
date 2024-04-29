@@ -200,5 +200,53 @@ namespace Calculator.WinForm
             System.Reflection.MethodBase.GetCurrentMethod()
             );
         }
+
+        /// <summary>
+        /// +ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.AddButtonExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
+
+        /// <summary>
+        /// -ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubtractButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.SubtractButtonExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
+
+        /// <summary>
+        /// =ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void EqualButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.EqualButtonExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
     }
 }

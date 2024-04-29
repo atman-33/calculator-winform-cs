@@ -171,6 +171,39 @@ namespace Calculator.WinForm.ViewModels
         }
 
         /// <summary>
+        /// +ボタンを押した時の処理
+        /// </summary>
+        public void AddButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetAdd();
+            });
+        }
+
+        /// <summary>
+        /// -ボタンを押した時の処理
+        /// </summary>
+        public void SubtractButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetSubtract();
+            });
+        }
+
+        /// <summary>
+        /// =ボタンを押した時の処理
+        /// </summary>
+        public void EqualButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetEqual();
+            });
+        }
+
+        /// <summary>
         /// ボタン押下時の汎用処理
         /// </summary>
         /// <param name="resultEntity">最新の計算結果エンティティ。呼び出し元で処理を実装すること。</param>

@@ -27,7 +27,7 @@
         /// <summary>
         /// 計算用の値（小数）
         /// </summary>
-        public float ValueFloat => Convert.ToSingle(Value);
+        public double ValueDouble => Convert.ToSingle(Value);
 
         /// <summary>
         /// 同値であればtrue

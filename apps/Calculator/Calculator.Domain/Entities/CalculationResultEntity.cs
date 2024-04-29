@@ -9,6 +9,11 @@ namespace Calculator.Domain.Entities
     public class CalculationResultEntity
     {
         /// <summary>
+        /// 計算サービス
+        /// </summary>
+        CalculateService _service = new CalculateService();
+
+        /// <summary>
         /// コンストラクタ
         /// </summary>
         public CalculationResultEntity()
@@ -47,7 +52,7 @@ namespace Calculator.Domain.Entities
         /// <summary>
         /// 演算記号
         /// </summary>
-        public OperatorValue? Operator { get; } = null;
+        public OperatorValue? Operator { get; private set; } = null;
 
         /// <summary>
         /// 二つ目の計算用の値
@@ -57,7 +62,7 @@ namespace Calculator.Domain.Entities
         /// <summary>
         /// =をインプットされた時はtrue
         /// </summary>
-        public bool HasEqual { get; } = false;
+        public bool HasEqual { get; private set; } = false;
 
         /// <summary>
         /// 計算過程
@@ -81,10 +86,9 @@ namespace Calculator.Domain.Entities
         {
             get
             {
-                var service = new CalculateService();
                 if (HasEqual && Value1 is not null && Value2 is not null && Operator is not null)
                 {
-                    return service.Calculate(Value1, Value2, Operator);
+                    return _service.Calculate(Value1, Value2, Operator);
                 }
 
                 if (Value2 is not null)
@@ -119,9 +123,14 @@ namespace Calculator.Domain.Entities
         /// <param name="num"></param>
         public void SetNumber(int num)
         {
+            if (HasEqual)
+            {
+                Reset();
+            }
+
             if (Operator is null)
             {
-                if (Value1 is null || Value1?.ValueFloat == 0)
+                if (Value1 is null || Value1?.Value == "0")
                 {
                     Value1 = new CalculationValue(num.ToString());
                 }
@@ -132,7 +141,7 @@ namespace Calculator.Domain.Entities
             }
             else
             {
-                if (Value2 is null || Value2?.ValueFloat == 0)
+                if (Value2 is null || Value2?.Value == "0")
                 {
                     Value2 = new CalculationValue(num.ToString());
                 }
@@ -151,7 +160,7 @@ namespace Calculator.Domain.Entities
         {
             if (Operator is null)
             {
-                if (Value1 is null || Value1?.ValueFloat == 0)
+                if (Value1 is null || Value1?.ValueDouble == 0)
                 {
                     return true;
                 }
@@ -162,7 +171,7 @@ namespace Calculator.Domain.Entities
             }
             else
             {
-                if (Value2 is null || Value2?.ValueFloat == 0)
+                if (Value2 is null || Value2?.ValueDouble == 0)
                 {
                     return true;
                 }
@@ -178,11 +187,16 @@ namespace Calculator.Domain.Entities
         /// </summary>
         public void SetPoint()
         {
+            if (HasEqual)
+            {
+                Reset();
+            }
+
             if (Operator is null)
             {
-                if (Value1 is null || Value1?.ValueFloat == 0)
+                if (Value1 is null || Value1?.ValueDouble == 0)
                 {
-                    Value1 = new CalculationValue("0.0");
+                    Value1 = new CalculationValue("0.");
                 }
                 else
                 {
@@ -191,14 +205,82 @@ namespace Calculator.Domain.Entities
             }
             else
             {
-                if (Value2 is null || Value2?.ValueFloat == 0)
+                if (Value2 is null || Value2?.ValueDouble == 0)
                 {
-                    Value2 = new CalculationValue("0.0");
+                    Value2 = new CalculationValue("0.");
                 }
                 else
                 {
                     Value2 = new CalculationValue(Value2?.Value + ".");
                 }
+            }
+        }
+
+        /// <summary>
+        /// +ボタンをセットする。
+        /// </summary>
+        public void SetAdd()
+        {
+            CalculateAndSetValue1();
+            Operator = new OperatorValue(OperatorValue.Add.Value);
+            NormalizeValues();
+        }
+
+        /// <summary>
+        /// -ボタンをセットする。
+        /// </summary>
+        public void SetSubtract()
+        {
+            CalculateAndSetValue1();
+            Operator = new OperatorValue(OperatorValue.Subtract.Value);
+            NormalizeValues();
+        }
+
+        /// <summary>
+        /// =ボタンをセットする。
+        /// </summary>
+        public void SetEqual()
+        {
+            HasEqual = true;
+        }
+
+        /// <summary>
+        /// 格納された設定を全てリセットする。
+        /// </summary>
+        private void Reset()
+        {
+            Value1 = null;
+            Value2 = null;
+            Operator = null;
+            HasEqual = false;
+        }
+
+        /// <summary>
+        /// Value1とValue2を正常な値にする。（末尾の.を除くなど）
+        /// </summary>
+        private void NormalizeValues()
+        {
+            if (Value1 is not null)
+            {
+                Value1 = new CalculationValue(Value1.NormalValue);
+            }
+
+            if (Value2 is not null)
+            {
+                Value2 = new CalculationValue(Value2.NormalValue);
+            }
+        }
+
+        /// <summary>
+        /// 計算を実行し、Value1を更新する。
+        /// </summary>
+        private void CalculateAndSetValue1()
+        {
+            if (Value1 is not null && Operator is not null && Value2 is not null)
+            {
+                var newValue = _service.Calculate(Value1, Value2, Operator);
+                Value1 = new CalculationValue(newValue.ToString());
+                Value2 = null;
             }
         }
     }
