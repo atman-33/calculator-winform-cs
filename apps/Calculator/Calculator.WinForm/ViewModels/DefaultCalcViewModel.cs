@@ -238,6 +238,17 @@ namespace Calculator.WinForm.ViewModels
         }
 
         /// <summary>
+        /// Cボタンを押した時の処理
+        /// </summary>
+        public void ClearButtonExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.Clear();
+            });
+        }
+
+        /// <summary>
         /// ボタン押下時の汎用処理
         /// </summary>
         /// <param name="resultEntity">最新の計算結果エンティティ。呼び出し元で処理を実装すること。</param>

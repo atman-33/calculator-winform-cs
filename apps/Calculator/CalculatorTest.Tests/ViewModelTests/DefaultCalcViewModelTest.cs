@@ -259,5 +259,24 @@ namespace CalculatorTest.Tests.ViewModelTests
             Assert.AreEqual("-1 + -2 =", vm.CalculateProcess);
             Assert.AreEqual("-3", vm.DisplayValue);
         }
+
+        [TestMethod]
+        public void クリア()
+        {
+            var vm = new DefaultCalcViewModel();
+
+            Assert.AreEqual("", vm.CalculateProcess);
+            Assert.AreEqual("", vm.DisplayValue);
+
+            // 1
+            vm.OneButtonExecute();
+            Assert.AreEqual("1", vm.CalculateProcess);
+            Assert.AreEqual("1", vm.DisplayValue);
+
+            // C
+            vm.ClearButtonExecute();
+            Assert.AreEqual("", vm.CalculateProcess);
+            Assert.AreEqual("", vm.DisplayValue);
+        }
     }
 }

@@ -151,6 +151,7 @@
             ClearButton.TabIndex = 2;
             ClearButton.Text = "C";
             ClearButton.UseVisualStyleBackColor = false;
+            ClearButton.Click += ClearButton_Click;
             // 
             // button2
             // 

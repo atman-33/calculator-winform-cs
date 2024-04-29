@@ -296,5 +296,21 @@ namespace Calculator.WinForm
             System.Reflection.MethodBase.GetCurrentMethod()
             );
         }
+
+        /// <summary>
+        /// Cボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.ClearButtonExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
     }
 }

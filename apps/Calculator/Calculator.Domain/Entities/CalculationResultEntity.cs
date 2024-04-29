@@ -303,6 +303,14 @@ namespace Calculator.Domain.Entities
         }
 
         /// <summary>
+        /// データをクリアする。
+        /// </summary>
+        public void Clear()
+        {
+            Reset();
+        }
+
+        /// <summary>
         /// 格納された設定を全てリセットする。
         /// </summary>
         private void Reset()
