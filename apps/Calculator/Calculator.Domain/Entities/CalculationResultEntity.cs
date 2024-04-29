@@ -67,8 +67,8 @@ namespace Calculator.Domain.Entities
             get
             {
                 var str = HasEqual
-                       ? $"{Value1?.Value} {Operator?.Value} {Value2?.Value} ="
-                       : $"{Value1?.Value} {Operator?.Value}";
+                       ? $"{Value1?.NormalValue} {Operator?.Value} {Value2?.NormalValue} ="
+                       : $"{Value1?.NormalValue} {Operator?.Value}";
 
                 return str.Trim();
             }
@@ -140,7 +140,65 @@ namespace Calculator.Domain.Entities
                 {
                     Value2 = new CalculationValue(Value2?.Value + num.ToString());
                 }
+            }
+        }
 
+        /// <summary>
+        /// 小数点を追加できる時はtrue
+        /// </summary>
+        /// <returns></returns>
+        public bool CanAddPoint()
+        {
+            if (Operator is null)
+            {
+                if (Value1 is null || Value1?.ValueFloat == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return Value1 is null ? true : !Value1.Value.Contains(".");
+                }
+            }
+            else
+            {
+                if (Value2 is null || Value2?.ValueFloat == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return Value2 is null ? true : !Value2.Value.Contains(".");
+                }
+            }
+        }
+
+        /// <summary>
+        /// 小数点を追加する。
+        /// </summary>
+        public void SetPoint()
+        {
+            if (Operator is null)
+            {
+                if (Value1 is null || Value1?.ValueFloat == 0)
+                {
+                    Value1 = new CalculationValue("0.0");
+                }
+                else
+                {
+                    Value1 = new CalculationValue(Value1?.Value + ".");
+                }
+            }
+            else
+            {
+                if (Value2 is null || Value2?.ValueFloat == 0)
+                {
+                    Value2 = new CalculationValue("0.0");
+                }
+                else
+                {
+                    Value2 = new CalculationValue(Value2?.Value + ".");
+                }
             }
         }
     }

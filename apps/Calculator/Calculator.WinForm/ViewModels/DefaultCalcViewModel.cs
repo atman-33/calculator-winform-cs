@@ -1,4 +1,5 @@
 ﻿using Calculator.Domain.Entities;
+using System.Diagnostics;
 using WinFormBoilerplate.WinForm.ViewModels;
 
 namespace Calculator.WinForm.ViewModels
@@ -149,6 +150,23 @@ namespace Calculator.WinForm.ViewModels
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetNumber(9);
+            });
+        }
+
+        /// <summary>
+        /// .ボタンを押した時の処理
+        /// </summary>
+        public void PointButtonExecute()
+        {
+            if (!_currentResultEntity.CanAddPoint())
+            {
+                Debug.WriteLine("既に小数点を追加済みのため、小数点は追加しません。");
+                return;
+            }
+
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetPoint();
             });
         }
 

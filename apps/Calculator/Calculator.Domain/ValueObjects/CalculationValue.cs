@@ -20,6 +20,11 @@
         public string Value { get; }
 
         /// <summary>
+        /// 正常な値（文字列）。小数点ポイントを省くなど、正常な表示に変換される。
+        /// </summary>
+        public string NormalValue => Convert.ToSingle(Value).ToString();
+
+        /// <summary>
         /// 計算用の値（小数）
         /// </summary>
         public float ValueFloat => Convert.ToSingle(Value);

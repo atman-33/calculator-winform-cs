@@ -382,6 +382,7 @@
             PointButton.TabIndex = 2;
             PointButton.Text = ".";
             PointButton.UseVisualStyleBackColor = false;
+            PointButton.Click += PointButton_Click;
             // 
             // EqualButton
             // 

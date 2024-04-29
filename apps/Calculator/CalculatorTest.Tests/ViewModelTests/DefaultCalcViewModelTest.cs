@@ -20,6 +20,19 @@ namespace CalculatorTest.Tests.ViewModelTests
             vm.OneButtonExecute();
             Assert.AreEqual("1", vm.CalculateProcess);
             Assert.AreEqual("1", vm.DisplayValue);
+
+            vm.TwoButtonExecute();
+            Assert.AreEqual("12", vm.CalculateProcess);
+            Assert.AreEqual("12", vm.DisplayValue);
+
+            vm.PointButtonExecute();
+            Assert.AreEqual("12", vm.CalculateProcess);
+            Assert.AreEqual("12.", vm.DisplayValue);
+
+            // 2回目の小数点追加は、何もしない
+            vm.PointButtonExecute();
+            Assert.AreEqual("12", vm.CalculateProcess);
+            Assert.AreEqual("12.", vm.DisplayValue);
         }
     }
 }
