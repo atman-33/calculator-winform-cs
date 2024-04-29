@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Mt2VS-fp84buWHTQqZdh" name="ページ1">
-        <mxGraphModel dx="1718" dy="1132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1993" dy="1133" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -91,7 +91,7 @@
                 <mxCell id="67" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=default;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="59" target="68" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="アプリ起動" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;" parent="1" vertex="1">
+                <mxCell id="59" value="アプリ起動" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="75" y="622.5" width="115" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="76" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="79" edge="1">
@@ -131,7 +131,7 @@
                         <mxPoint x="969.5999999999999" y="596.5625" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="74" value="(*1)&lt;br&gt;&lt;br&gt;[=をクリック直後]&lt;br&gt;・新規の数値として登録&lt;br&gt;&lt;br&gt;[=をクリック直後ではない]&lt;br&gt;・入力中の数値の末尾に数字を追加" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#333333;perimeterSpacing=0;spacing=8;" parent="1" vertex="1">
+                <mxCell id="74" value="(*1)&lt;br&gt;&lt;br&gt;[=をクリック直後]&lt;br&gt;・新規の数値として登録&lt;br&gt;&lt;br&gt;[=をクリック直後ではない]&lt;br&gt;・入力中の数値の末尾に数字を追加" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;perimeterSpacing=0;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="1360" y="540" width="260" height="151.25" as="geometry"/>
                 </mxCell>
                 <mxCell id="75" value="(*1)数字を反映する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
@@ -143,7 +143,7 @@
                 <mxCell id="83" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="80" target="82" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「プラスマイナス」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
+                <mxCell id="80" value="&lt;span style=&quot;&quot;&gt;「プラスマイナス」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;labelPosition=center;align=center;fillColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="827" y="691.25" width="243" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="82" value="入力中の数値のプラスマイナスの符号を逆にする。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
@@ -155,7 +155,7 @@
                 <mxCell id="85" value="(*2)入力中の数値の末尾に小数点を追加する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
                     <mxGeometry x="1140" y="821.25" width="180" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="86" value="(*2)&lt;br&gt;&lt;br&gt;・既に入力中の数値が小数点数値の場合は、何もしない。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#333333;spacing=8;" parent="1" vertex="1">
+                <mxCell id="86" value="(*2)&lt;br&gt;&lt;br&gt;・既に入力中の数値が小数点数値の場合は、何もしない。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="1360" y="801.25" width="260" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="87" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="84" edge="1">
@@ -179,7 +179,7 @@
                 <mxCell id="90" value="(*3)演算記号を反映する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
                     <mxGeometry x="1140" y="936.25" width="180" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="91" value="(*3)&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が未設定]&lt;br&gt;・演算記号を設定&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が設定済み]&lt;br&gt;・計算を実行" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#333333;spacing=8;" parent="1" vertex="1">
+                <mxCell id="91" value="(*3)&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が未設定]&lt;br&gt;・演算記号を設定&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が設定済み]&lt;br&gt;・計算を実行" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="1360" y="936.25" width="260" height="145" as="geometry"/>
                 </mxCell>
                 <mxCell id="98" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="94" target="95" edge="1">
@@ -191,7 +191,7 @@
                 <mxCell id="95" value="(*4)計算処理を実行する。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
                     <mxGeometry x="1140" y="1110.25" width="180" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="96" value="(*4)&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が未設定]&lt;br&gt;・1つ目の数値だけで計算&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が設定済み]&lt;br&gt;・1つ目と2つ目の数値を使って計算" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#333333;spacing=8;" parent="1" vertex="1">
+                <mxCell id="96" value="(*4)&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が未設定]&lt;br&gt;・1つ目の数値だけで計算&lt;br&gt;&lt;br&gt;[計算用の2つ目の値が設定済み]&lt;br&gt;・1つ目と2つ目の数値を使って計算" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;fillColor=#d5e8d4;spacing=8;strokeColor=#82b366;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="1360" y="1110.25" width="260" height="145" as="geometry"/>
                 </mxCell>
                 <mxCell id="105" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="99" target="100" edge="1">
@@ -221,28 +221,28 @@
                 <mxCell id="104" value="1つ後の操作状態に進む。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
                     <mxGeometry x="1140" y="1515" width="180" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="111" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「ハンバーガーメニュー」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" vertex="1" parent="1">
+                <mxCell id="111" value="&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;「ハンバーガーメニュー」ボタン&lt;br&gt;をクリック&lt;/span&gt;" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.basic.6_point_star;fontSize=14;fontColor=#000000;fillColor=none;labelPosition=center;align=center;" parent="1" vertex="1">
                     <mxGeometry x="820" y="430" width="243" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="112" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" edge="1" parent="1" source="66" target="111">
+                <mxCell id="112" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="66" target="111" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="820" y="560" as="targetPoint"/>
                         <mxPoint x="710" y="652.5" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="113" value="電卓選択画面ダイアログを開く。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" vertex="1" parent="1">
+                <mxCell id="113" value="電卓選択画面ダイアログを開く。" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontColor=default;fillColor=none;align=left;spacing=8;" parent="1" vertex="1">
                     <mxGeometry x="1140" y="432.5" width="180" height="65" as="geometry"/>
                 </mxCell>
-                <mxCell id="115" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" edge="1" parent="1" source="111" target="113">
+                <mxCell id="115" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fontColor=#000000;endArrow=open;endFill=0;startSize=6;endSize=6;" parent="1" source="111" target="113" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1073" y="620" as="sourcePoint"/>
                         <mxPoint x="1150" y="620" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="116" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#CC0000;" vertex="1" parent="1">
-                    <mxGeometry x="790" y="400" width="560" height="120" as="geometry"/>
+                <mxCell id="116" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#CC0000;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="405" width="560" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="118" value="今回は未実装" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC0000;" vertex="1" parent="1">
+                <mxCell id="118" value="今回は未実装" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC0000;" parent="1" vertex="1">
                     <mxGeometry x="790" y="370" width="100" height="30" as="geometry"/>
                 </mxCell>
             </root>
