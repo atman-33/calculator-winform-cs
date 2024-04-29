@@ -17,7 +17,7 @@
         /// <summary>
         /// 計算用の値（文字列）
         /// </summary>
-        public string Value { get; }
+        public string Value { get; private set; }
 
         /// <summary>
         /// 正常な値（文字列）。小数点ポイントを省くなど、正常な表示に変換される。
@@ -27,7 +27,28 @@
         /// <summary>
         /// 計算用の値（小数）
         /// </summary>
-        public double ValueDouble => Convert.ToSingle(Value);
+        public double ValueDouble => Convert.ToDouble(Value);
+
+        /// <summary>
+        /// 0または正の数である場合にtrue
+        /// </summary>
+        public bool IsNonNegative => ValueDouble >= 0;
+
+        /// <summary>
+        /// 値の符号を逆にする。
+        /// </summary>
+        public void ReverseNumberSign()
+        {
+            if (IsNonNegative)
+            {
+                Value = $"-{Value}";
+
+            }
+            else
+            {
+                Value = Value.Replace("-", "");
+            }
+        }
 
         /// <summary>
         /// 同値であればtrue

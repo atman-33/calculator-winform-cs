@@ -177,6 +177,7 @@
             DivideButton.TabIndex = 3;
             DivideButton.Text = "÷";
             DivideButton.UseVisualStyleBackColor = false;
+            DivideButton.Click += DivideButton_Click;
             // 
             // SevenButton
             // 
@@ -358,6 +359,7 @@
             PlusMinusButton.TabIndex = 2;
             PlusMinusButton.Text = "+/-";
             PlusMinusButton.UseVisualStyleBackColor = false;
+            PlusMinusButton.Click += PlusMinusButton_Click;
             // 
             // ZeroButton
             // 

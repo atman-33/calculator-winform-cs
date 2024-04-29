@@ -154,6 +154,18 @@ namespace Calculator.WinForm.ViewModels
         }
 
         /// <summary>
+        /// +/-ボタンを押した時の処理
+        /// </summary>
+        /// <exception cref="NotImplementedException"></exception>
+        public void ReverseNumberSign()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.ReverseNumberSign();
+            });
+        }
+
+        /// <summary>
         /// .ボタンを押した時の処理
         /// </summary>
         public void PointButtonExecute()
@@ -200,6 +212,17 @@ namespace Calculator.WinForm.ViewModels
             ButtonExecute(resultEntity =>
             {
                 resultEntity.SetMultiply();
+            });
+        }
+
+        /// <summary>
+        /// ÷ボタンを押した時の処理
+        /// </summary>
+        public void DivideExecute()
+        {
+            ButtonExecute(resultEntity =>
+            {
+                resultEntity.SetDivide();
             });
         }
 

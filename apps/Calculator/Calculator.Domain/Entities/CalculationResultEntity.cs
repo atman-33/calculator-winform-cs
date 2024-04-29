@@ -217,6 +217,44 @@ namespace Calculator.Domain.Entities
         }
 
         /// <summary>
+        /// 入力中の値の符号を反対にする。
+        /// 入力中の値がnullもしくは0の場合は反対にしない。
+        /// </summary>
+        public void ReverseNumberSign()
+        {
+            if (Operator is null)
+            {
+                if (Value1 is null || Value1?.ValueDouble == 0)
+                {
+                    return;
+                }
+                else
+                {
+                    if (Value1 is null)
+                    {
+                        return;
+                    }
+                    Value1.ReverseNumberSign();
+                }
+            }
+            else
+            {
+                if (Value2 is null || Value2?.ValueDouble == 0)
+                {
+                    return;
+                }
+                else
+                {
+                    if (Value2 is null)
+                    {
+                        return;
+                    }
+                    Value2.ReverseNumberSign();
+                }
+            }
+        }
+
+        /// <summary>
         /// +ボタンをセットする。
         /// </summary>
         public void SetAdd()
@@ -243,6 +281,16 @@ namespace Calculator.Domain.Entities
         {
             CalculateAndSetValue1();
             Operator = new OperatorValue(OperatorValue.Multiply.Value);
+            NormalizeValues();
+        }
+
+        /// <summary>
+        /// ÷ボタンをセットする。
+        /// </summary>
+        public void SetDivide()
+        {
+            CalculateAndSetValue1();
+            Operator = new OperatorValue(OperatorValue.Divide.Value);
             NormalizeValues();
         }
 

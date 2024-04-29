@@ -186,6 +186,22 @@ namespace Calculator.WinForm
         }
 
         /// <summary>
+        /// +/-ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PlusMinusButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.ReverseNumberSign();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
+
+        /// <summary>
         /// .ボタンをクリックした時の処理
         /// </summary>
         /// <param name="sender"></param>
@@ -243,6 +259,22 @@ namespace Calculator.WinForm
             base.ExecuteWithErrorHandling(() =>
             {
                 _viewModel.MultiplyExecute();
+            },
+            GetType(),
+            System.Reflection.MethodBase.GetCurrentMethod()
+            );
+        }
+
+        /// <summary>
+        /// ÷ボタンをクリックした時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DivideButton_Click(object sender, EventArgs e)
+        {
+            base.ExecuteWithErrorHandling(() =>
+            {
+                _viewModel.DivideExecute();
             },
             GetType(),
             System.Reflection.MethodBase.GetCurrentMethod()
