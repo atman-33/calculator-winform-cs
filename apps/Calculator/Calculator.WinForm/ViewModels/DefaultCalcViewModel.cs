@@ -21,6 +21,7 @@ namespace Calculator.WinForm.ViewModels
         {
             //Debug.WriteLine("---- DefaultCalcViewModel Created! ----");
             _currentResultEntity = new CalculationResultEntity("0");
+            CalculateProcess = _currentResultEntity.Process;
             DisplayValue = _currentResultEntity.DisplayValue;
         }
 

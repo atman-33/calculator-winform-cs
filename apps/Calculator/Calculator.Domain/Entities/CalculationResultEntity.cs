@@ -317,6 +317,7 @@ namespace Calculator.Domain.Entities
         public void Clear()
         {
             Reset();
+            Value1 = new CalculationValue("0");
         }
 
         /// <summary>

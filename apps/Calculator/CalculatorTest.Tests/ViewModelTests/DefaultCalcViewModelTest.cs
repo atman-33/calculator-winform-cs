@@ -12,7 +12,7 @@ namespace CalculatorTest.Tests.ViewModelTests
 
             var temp = vm.DisplayValue;
 
-            Assert.AreEqual("", vm.CalculateProcess);
+            Assert.AreEqual("0", vm.CalculateProcess);
             Assert.AreEqual("0", vm.DisplayValue);
 
             // 0
@@ -259,8 +259,8 @@ namespace CalculatorTest.Tests.ViewModelTests
 
             // C
             vm.ClearButtonExecute();
-            Assert.AreEqual("", vm.CalculateProcess);
-            Assert.AreEqual("", vm.DisplayValue);
+            Assert.AreEqual("0", vm.CalculateProcess);
+            Assert.AreEqual("0", vm.DisplayValue);
         }
     }
 }
